@@ -9,7 +9,7 @@ import Headings from "./components/Headings";
 
 function App() {
   // Constants
-  const TOTAL_TIME = 60;
+  const TOTAL_TIME = 40;
 
   // Refs
   const userTypeRef = useRef("");
