@@ -109,7 +109,7 @@ function App() {
   };
   return (
     <>
-      <div className="min-h-screen py-14 font-mono w-[90%] max-w-3xl mx-auto flex flex-col items-center bg-gradient-to-b from-blue-50 via-white to-blue-100 rounded-xl shadow-lg">
+      <div className="min-h-screen py-14 font-mono sm:w-[90%] w-[100%] max-w-3xl mx-auto flex flex-col items-center bg-gradient-to-b from-blue-50 via-white to-blue-100 rounded-xl shadow-lg">
         <Headings timer={timer} />
         <TestCard
           sentence={sentence}
