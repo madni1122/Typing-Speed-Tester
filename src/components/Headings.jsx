@@ -1,5 +1,6 @@
 import keyboard from "../assets/keyboard.svg";
 import hourglass from "../assets/hourglass.svg";
+import FloatingTimer from "./FloatingTimer";
 
 const Headings = ({ timer }) => {
   return (
@@ -17,13 +18,16 @@ const Headings = ({ timer }) => {
       </h1>
 
       {/* Timer Section */}
-      <p className="flex justify-center  items-center gap-2 mt-4 sm:mt-6 text-base sm:text-lg font-semibold text-gray-700">
+      <p className="flex justify-center items-center gap-2 mt-4 sm:mt-6 text-base sm:text-lg font-semibold text-gray-700">
         <img
           src={hourglass}
           className="w-4 h-4 sm:w-[17px] sm:h-[17px] md:w-[20px] md:h-[20px]"
           alt="stats icon"
         />
         <span>Time Left: {timer}s</span>
+
+        {/* Mobile Floating Timer */}
+        <FloatingTimer timer={timer} />
       </p>
     </div>
   );
